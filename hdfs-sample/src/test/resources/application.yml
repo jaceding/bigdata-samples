@@ -1,0 +1,9 @@
+server:
+  port: 8080
+logging:
+  config: classpath:log4j2-spring.xml
+spring:
+  application:
+    name: hdfs-sample
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
