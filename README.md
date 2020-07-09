@@ -1,2 +1,2 @@
 # bigdata-samples
-Samples for Spring Cloud
+Samples for BigData
