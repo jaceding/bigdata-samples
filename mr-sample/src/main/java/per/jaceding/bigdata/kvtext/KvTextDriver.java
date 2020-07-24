@@ -19,8 +19,8 @@ import java.io.IOException;
 public class KvTextDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        args = new String[]{"C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\kvtext\\input",
-                "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\kvtext\\output"};
+        args = new String[]{"./mr-sample/src/main/java/per/jaceding/bigdata/kvtext/input",
+                "./mr-sample/src/main/java/per/jaceding/bigdata/kvtext/output"};
 
         Configuration conf = new Configuration();
         // 设置切割符

@@ -1,9 +1,12 @@
 package per.jaceding.bigdata.flowcount;
 
 import java.io.IOException;
+
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * FlowCountMapper
@@ -11,14 +14,16 @@ import org.apache.hadoop.mapreduce.Mapper;
  * @author jaceding
  * @date 2020/7/4
  */
-public class FlowCountMapper extends Mapper<LongWritable, Text, Text, FlowBean>{
+public class FlowCountMapper extends Mapper<LongWritable, Text, Text, FlowBean> {
 
-    FlowBean v = new FlowBean();
-    Text k = new Text();
+    private static final Logger LOG = LoggerFactory.getLogger(FlowCountMapper.class.getName());
+
+    private FlowBean v = new FlowBean();
+    private Text k = new Text();
 
     @Override
-    protected void map(LongWritable key, Text value, Context context)	throws IOException, InterruptedException {
-
+    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        LOG.info("key#" + key.get() + "value#" + value.toString());
         // 1 获取一行
         String line = value.toString();
 

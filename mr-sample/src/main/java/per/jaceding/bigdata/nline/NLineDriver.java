@@ -2,6 +2,7 @@ package per.jaceding.bigdata.nline;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
@@ -21,8 +22,8 @@ public class NLineDriver {
 
     public static void main(String[] args) throws IOException, URISyntaxException, ClassNotFoundException, InterruptedException {
         // 输入输出路径需要根据自己电脑上实际的输入输出路径设置
-        args = new String[]{"C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\nline\\input",
-                "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\nline\\output"};
+        args = new String[]{"./mr-sample/src/main/java/per/jaceding/bigdata/nline/input",
+                "./mr-sample/src/main/java/per/jaceding/bigdata/nline/output"};
 
         // 1 获取job对象
         Configuration configuration = new Configuration();

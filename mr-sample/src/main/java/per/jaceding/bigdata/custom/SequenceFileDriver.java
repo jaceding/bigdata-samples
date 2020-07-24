@@ -17,10 +17,9 @@ import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 public class SequenceFileDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-
         // 输入输出路径需要根据自己电脑上实际的输入输出路径设置
-        args = new String[]{"C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\custom\\input",
-                "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\custom\\output"};
+        args = new String[]{"./mr-sample/src/main/java/per/jaceding/bigdata/custom/input",
+                "./mr-sample/src/main/java/per/jaceding/bigdata/custom/output"};
 
         // 1 获取job对象
         Configuration conf = new Configuration();

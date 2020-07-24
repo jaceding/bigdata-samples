@@ -18,10 +18,9 @@ import java.io.IOException;
 public class FlowCountDriver2 {
 
     public static void main(String[] args) throws IllegalArgumentException, IOException, ClassNotFoundException, InterruptedException {
-
         // 输入输出路径需要根据自己电脑上实际的输入输出路径设置
-        args = new String[] { "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\flowcount\\input",
-                "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\flowcount\\output" };
+        args = new String[]{"./mr-sample/src/main/java/per/jaceding/bigdata/flowcount/input",
+                "./mr-sample/src/main/java/per/jaceding/bigdata/flowcount/output"};
 
         // 1 获取配置信息，或者job对象实例
         Configuration configuration = new Configuration();

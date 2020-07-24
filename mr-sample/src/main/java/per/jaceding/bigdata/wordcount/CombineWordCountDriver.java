@@ -20,8 +20,8 @@ import java.io.IOException;
 public class CombineWordCountDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        args = new String[]{"C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\wordcount\\input",
-                "C:\\Users\\93197\\IdeaProjects\\bigdata-samples\\mr-sample\\src\\main\\java\\per\\jaceding\\bigdata\\wordcount\\output"};
+        args = new String[]{"./mr-sample/src/main/java/per/jaceding/bigdata/wordcount/input",
+                "./mr-sample/src/main/java/per/jaceding/bigdata/wordcount/output"};
 
         // 1 获取配置信息以及封装任务
         Configuration configuration = new Configuration();
